@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.0">
+  <CommandSet xml:lang="es-ES" Name="comandos">
+    <CommandPrefix>Stapp</CommandPrefix>
+    <Example>
+      Busca Paraderos
+      Ayudame
+      Cuanto falta
+      Donde estoy
+    </Example>
+
+    <Command Name="Seek">
+      <Example> busca paraderos</Example>
+      <ListenFor>busca paraderos</ListenFor>
+      <Feedback>Hola, Bienvenido a la aplicación de búsqueda de paraderos, Una ves iniciada la aplicación presione en su pantalla</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+    <Command Name="ayuda">
+      <Example>ayudame</Example>
+      <ListenFor>Ayudame</ListenFor>
+      <Feedback>Debe decir el número de su recorrido con voz clara para que pueda detectarlo</Feedback>
+      <Navigate />
+    </Command>
+    <Command Name="distancia">
+      <Example>¿Cuanto Falta?</Example>
+      <ListenFor>Cuanto falta</ListenFor>
+      <Feedback>Para saber cuanto falta, presione en la esquina superior izquierda de su pantalla una vez iniciada la aplicación</Feedback>
+      <Navigate />
+    </Command>
+    <Command Name="posicion">
+      <Example>¿Donde Estoy?</Example>
+      <ListenFor>Donde Estoy</ListenFor>
+      <Feedback>Para saber su posición, presione en la esquina superior derecha de su pantalla una vez iniciada la aplicación</Feedback>
+      <Navigate />
+    </Command>
+  </CommandSet>
+  
+  <CommandSet xml:lang="es-MX" Name="comandos">
+    <CommandPrefix>Stapp</CommandPrefix>
+    <Example> Busca Paraderos 
+              Ayudame
+              Cuanto falta
+              Donde estoy</Example>
+
+    <Command Name="Seek">
+      <Example> busca paraderos</Example>
+      <ListenFor>busca paraderos</ListenFor>
+      <Feedback>Hola, Bienvenido a la aplicación de búsqueda de paraderos, Una ves iniciada la aplicación presione en su pantalla</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+    <Command Name="ayuda">
+      <Example>ayudame</Example>
+      <ListenFor>Ayudame</ListenFor>
+      <Feedback>Debe decir el número de su recorrido con voz clara para que pueda detectarlo</Feedback>
+      <Navigate />
+    </Command>
+    <Command Name="distancia">
+      <Example>¿Cuanto Falta?</Example>
+      <ListenFor>Cuanto falta</ListenFor>
+      <Feedback>Para saber cuanto falta, presione en la esquina superior izquierda de su pantalla una vez iniciada la aplicación</Feedback>
+      <Navigate />
+    </Command>
+    <Command Name="posicion">
+      <Example>¿Donde Estoy?</Example>
+      <ListenFor>Donde Estoy</ListenFor>
+      <Feedback>Para saber su posición, presione en la esquina superior derecha de su pantalla una vez iniciada la aplicación</Feedback>
+      <Navigate />
+    </Command>
+  </CommandSet>
+</VoiceCommands>
